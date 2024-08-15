@@ -13,7 +13,7 @@ app.use('/text-to-speech/:text', async (req: Request, res: Response) => {
         res.setHeader("Content-Type", "audio/mpeg");
         return res.send(audioBuffer);
     }catch(err){
-        console.log('erro nesse carai, ' + err)
+        console.log('houve um erro, ' + err)
     }
 })
 
