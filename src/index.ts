@@ -1,7 +1,6 @@
 import express, { Request, Response }  from "express";
 import { createAudioStreamFromText } from "./services/elevenLabs/text_to_speech_file";
 import cors from "cors"
-import { constrainedMemory } from "process";
 
 const app = express()
 app.use(cors())
